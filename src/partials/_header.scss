@@ -1,22 +1,22 @@
-.container {
+header>.container {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
     border-bottom: 1px solid $main_txt;
 
-    img {
+    &>img {
         padding-left: 1rem;
+        width: 12%;
     }
 
     nav {
+        font-size: 1.2rem;
+        line-height: 3rem;
 
-        line-height: 2rem;
-
-        a {
-            text-decoration: none;
+        a:not(:last-child) {
+            @include txt_decor_none;
             color: $main_txt;
-            font-weight: 500;
-            margin-left: 3rem;
+            margin-left: 2rem;
         }
 
         .fa {
@@ -25,8 +25,17 @@
         }
 
         a:last-child {
-            @include btn;
             color: $color_btn;
+            @include txt_decor_none;
+        }
+
+        span {
+            @include btn;
+            margin-left: 2rem;
+
+            img {
+                @include btn_img;
+            }
         }
 
     }

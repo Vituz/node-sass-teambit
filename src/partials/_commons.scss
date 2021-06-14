@@ -11,12 +11,23 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
 
 @mixin btn {
     border: 1px solid $color_btn;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem;
     border-radius: 0.3rem;
+}
+
+@mixin txt_decor_none {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+@mixin btn_img {
+    width: 1.3rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
 }
