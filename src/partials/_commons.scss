@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+@mixin btn {
+    border: 1px solid $color_btn;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+}

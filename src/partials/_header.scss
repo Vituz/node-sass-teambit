@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid $main_txt;
+
+    img {
+        padding-left: 1rem;
+    }
+
+    nav {
+
+        line-height: 2rem;
+
+        a {
+            text-decoration: none;
+            color: $main_txt;
+            font-weight: 500;
+            margin-left: 3rem;
+        }
+
+        .fa {
+            color: $main_txt;
+            font-size: 0.8rem;
+        }
+
+        a:last-child {
+            @include btn;
+            color: $color_btn;
+        }
+
+    }
+}
