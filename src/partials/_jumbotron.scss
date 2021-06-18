@@ -1,6 +1,6 @@
 .jumbotron {
     margin: 4rem 0;
-    background-image: url('/dist/img/illustration-main.jpg');
+    background-image: url('../img/illustration-main.jpg');
     background-repeat: no-repeat;
     background-size: 40rem;
     background-position: top right;
@@ -17,10 +17,14 @@
 
         &>p {
             width: 90%;
-            font-weight: 500;
-            line-height: 2rem;
+            font-weight: 400;
+            line-height: 2.8rem;
             font-size: 1.3rem;
             margin-bottom: 3rem;
+        }
+
+        &>div {
+            margin: 4rem 0 2rem 0;
         }
 
         span {
@@ -30,8 +34,14 @@
         }
 
         &>a {
-            margin: 10rem;
             text-decoration: none;
+            color: $main_txt;
         }
     }
+}
+
+.google,
+.slack {
+    width: 1.5rem;
+    vertical-align: middle;
 }
