@@ -89,6 +89,7 @@ header > .container nav span img {
   border-radius: 0.3rem;
   background-color: #2C4792;
   color: white;
+  margin-right: 0.2rem;
 }
 .jumbotron .jumbo_text > a {
   text-decoration: none;
